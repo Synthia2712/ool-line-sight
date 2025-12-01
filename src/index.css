@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,10 +12,10 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Out of Line Design System - Premium Interior Design Dashboard */
-    
+
     /* Base Colors */
     --background: 30 15% 98%; /* Warm off-white */
-    --foreground: 0 0% 18%; /* Deep charcoal */
+    --foreground: 215 27.907% 16.8627%; /* Deep charcoal */
 
     --card: 30 20% 99%;
     --card-foreground: 0 0% 18%;
@@ -21,7 +24,7 @@ All colors MUST be HSL.
     --popover-foreground: 0 0% 18%;
 
     /* Dusty Sage Accent */
-    --primary: 145 15% 65%; /* Dusty sage */
+    --primary: 220 100% 75.4902%; /* Dusty sage */
     --primary-foreground: 30 15% 98%;
 
     /* Subtle Secondary */
@@ -53,15 +56,31 @@ All colors MUST be HSL.
     /* Gradients */
     --gradient-subtle: linear-gradient(135deg, hsl(30 20% 99%), hsl(30 15% 97%));
     --gradient-sage: linear-gradient(135deg, hsl(145 15% 65%), hsl(145 20% 70%));
-    
+
     /* Shadows */
     --shadow-soft: 0 2px 8px -2px hsl(0 0% 18% / 0.08);
     --shadow-medium: 0 4px 16px -4px hsl(0 0% 18% / 0.12);
     --shadow-large: 0 12px 32px -8px hsl(0 0% 18% / 0.16);
-    
+
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-snappy: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-sans: Roboto, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --font-serif: Merriweather, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --shadow-sm: 0px 1px 1.5px 0px hsla(215, 14%, 34%, 0.1);
+    --shadow: 0px 1px 3px 0px hsla(215, 14%, 34%, 0.1);
+    --shadow-md: 0px 1px 4.5px 0px hsla(215, 14%, 34%, 0.1);
+    --shadow-lg: 0px 1px 7.5px 0px hsla(215, 14%, 34%, 0.1);
+  }
+  .dark {
+    --font-sans: Roboto, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --font-serif: Merriweather, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --shadow-sm: 0px 1px 1.5px 0px hsla(215, 14%, 34%, 0.1);
+    --shadow: 0px 1px 3px 0px hsla(215, 14%, 34%, 0.1);
+    --shadow-md: 0px 1px 4.5px 0px hsla(215, 14%, 34%, 0.1);
+    --shadow-lg: 0px 1px 7.5px 0px hsla(215, 14%, 34%, 0.1);
   }
 }
 
